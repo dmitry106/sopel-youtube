@@ -9,7 +9,7 @@ from sopel import tools
 import datetime
 import sys
 import re
-import apiclient.discovery
+import googleapiclient.discovery
 if sys.version_info.major < 3:
     int = long
 
