@@ -46,7 +46,7 @@ def setup(bot):
         bot.memory['url_callbacks'] = tools.SopelMemory()
     bot.memory['url_callbacks'][regex] = get_info
     global API
-    API = apiclient.discovery.build("youtube", "v3",
+    API = googleapiclient.discovery.build("youtube", "v3",
                                     developerKey=bot.config.youtube.api_key)
 
 
